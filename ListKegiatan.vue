@@ -68,5 +68,22 @@ const filteredTasks = computed(() => {
   </div>
 </template>
 
-<style scoped>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #2c2c3a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
 </style>

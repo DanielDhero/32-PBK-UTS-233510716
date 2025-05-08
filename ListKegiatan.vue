@@ -5,7 +5,7 @@ const listbaru = ref('')
 const tugas = ref([])
 const filter = ref('all')
 
-function tambahTugas() {
+function tambahlist() {
   if (listbaru.value.trim()) {
     tugas.value.push({ text: listbaru.value, done: false })
     listbaru.value = ''
@@ -39,7 +39,7 @@ const filteredTasks = computed(() => {
         class="inputKegiatan"
         placeholder="Tambahkan kegiatan..."
       />
-      <button @click="addTask" class="addButton">Tambah</button>
+      <button @click="tambahlist" class="addButton">Tambah</button>
     </div>
 
     <div class="filterTabel">
@@ -50,6 +50,20 @@ const filteredTasks = computed(() => {
         <option value="undone">Belum selesai</option>
       </select>
     </div>
+
+    <ul class="task-list">
+      <li
+        v-for="(Tugas, index) in filteredTasks"
+        :key="index"
+        class="task-item"
+      >
+        <div class="task-left">
+          <input type="checkbox" v-model="Tugas.done" />
+          <span :class="{ done: Tugas.done }">{{ Tugas.text }}</span>
+        </div>
+        <button @click="hapusTugas(Tugas)" class="delete-button">Batal</button>
+      </li>
+    </ul>
 
   </div>
 </template>

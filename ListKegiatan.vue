@@ -3,7 +3,7 @@ import { ref, computed } from 'vue'
 
 const listbaru = ref('')
 const tugas = ref([])
-const filter = ref('all')
+const filter = ref('semua')
 
 function tambahlist() {
   if (listbaru.value.trim()) {
@@ -44,7 +44,7 @@ const filteredTasks = computed(() => {
 
     <div class="filterTabel">
       <label>Filter:</label>
-      <select v-model="filter" class="filter">
+      <select v-model="filter" class="pilihFilter">
         <option value="semua">Semua</option>
         <option value="done">Selesai</option>
         <option value="undone">Belum selesai</option>
@@ -125,7 +125,7 @@ body {
   gap: 10px;
 }
 
-.filter {
+.pilihFilter {
   padding: 6px 10px;
   font-size: 14px;
   background-color: #1a1a26;
@@ -185,8 +185,5 @@ body {
   transition: color 0.2s;
 }
 
-.delete-button:hover {
-  color: #f44336;
-}
 
 </style>

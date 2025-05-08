@@ -105,4 +105,63 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.inputKegiatan:focus {
+  border-color: #5831b4;
+  outline: none;
+}
+
+.addButton {
+  font-family: 'Poppins', sans-serif;
+}
+
+.addButton:hover {
+  background-color: #5831b4;
+}
+
+.filterTabel {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter {
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #1a1a26;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a26;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-left input[type='checkbox'] {
+  transform: scale(1.2);
+  accent-color: #4a90e2;
+}
+
+
 </style>

@@ -163,5 +163,15 @@ body {
   accent-color: #4a90e2;
 }
 
+.task-left span {
+  font-size: 15px;
+  color: #e0e0e0;
+  transition: color 0.2s, text-decoration 0.2s;
+}
+
+.task-left span.done {
+  text-decoration: line-through;
+  color: #888;
+}
 
 </style>

@@ -174,4 +174,19 @@ body {
   color: #888;
 }
 
+.delete-button {
+  background: none;
+  border: none;
+  color: #e57373;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: #f44336;
+}
+
 </style>

@@ -1,9 +1,24 @@
 <script setup>
 import { ref, computed } from 'vue'
+
+const listbaru = ref('')
+const tugas = ref([])
+const filter = ref('all')
+
+function tambahTugas() {
+  if (listbaru.value.trim()) {
+    tugas.value.push({ text: listbaru.value, done: false })
+    listbaru.value = ''
+  }
+}
+
+
+
 </script>
 
 <template>
   <div class="container">
+
     <h1 class="judul">List Kegiatan</h1>
 
     <div class="inputList">

@@ -19,6 +19,12 @@ function hapusTugas(Tugas) {
   }
 }
 
+const filteredTasks = computed(() => {
+  if (filter.value === 'done') return tugas.value.filter(t => t.done)
+  if (filter.value === 'undone') return tugas.value.filter(t => !t.done)
+  return tugas.value
+})
+
 </script>
 
 <template>

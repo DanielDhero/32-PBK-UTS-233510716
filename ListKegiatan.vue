@@ -86,4 +86,21 @@ body {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
+.inputList {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputKegiatan {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #1a1a26;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
 </style>

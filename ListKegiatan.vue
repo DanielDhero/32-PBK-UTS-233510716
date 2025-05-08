@@ -12,7 +12,12 @@ function tambahTugas() {
   }
 }
 
-
+function hapusTugas(Tugas) {
+  const index = tugas.value.indexOf(Tugas)
+  if (index !== -1) {
+    tugas.value.splice(index, 1)
+  }
+}
 
 </script>
 
